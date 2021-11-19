@@ -1,0 +1,90 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: #ededed;
+    font-family: Trebuchet MS;
+}
+
+*:focus {
+    outline: none;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+main > header {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px 100px 0px;
+    grid-column: 2;
+}
+
+main > header > a {
+    text-align: center;
+    width: auto;
+}
+
+main > header > a > img {
+    width: 250px;
+    height: auto;
+}
+
+main > article {
+    grid-row: 2;
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+}
+
+main > article > section, main > article > a {
+    background-color: #ae2573;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    height: 25px;
+    padding: 37.5px;
+}
+
+main > article > a {
+    grid-column: 2;
+}
+
+main > article > section {
+    grid-column: 4;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+main > article > section > ul {
+    padding-top: 10px;
+    list-style-type: none;
+    display: none;
+    background-color: #ae2573;
+    border-radius: 0px 0px 10px 10px;
+    padding: 37.5px;
+    margin-left: -37.5px;
+    width: 100%;
+}
+
+main > article > section:hover > ul {
+    display: block;
+}
+
+main > article > section:hover {
+    border: 10px 10px 0px 0px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #cacaca;
+}
