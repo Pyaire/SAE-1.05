@@ -5,17 +5,11 @@ html, body {
     font-family: Trebuchet MS;
 }
 
-body > nav {
-    width: 100%;
-    height: 100px;
-    border-bottom: 1px solid black;
-    background-color: white;
-}
-
-body > nav > ul {
+/* nav > ul {
     margin: 0;
     height: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-around;
     list-style-type: none;
     align-items: center;
@@ -26,8 +20,7 @@ nav > ul > li, nav > ul > a {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    height: 75px;
-    width: 400px;
+    height: 6vh;
     background-color: #ae2573;
     color: white;
     font-weight: bold;
@@ -72,44 +65,105 @@ a {
     text-decoration: none;
 }
 
-a:visited {
+nav a:visited {
     color: white;
 }
 
 nav > ul > li:hover > ul > li > a:hover {
     text-decoration: underline;
     color: #cacaca;
+} */
+
+*:focus {
+    outline: none;
 }
 
-main > article > section {
-    margin-top: 25px;
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-}
-
-main > article > section > h2 {
-    text-align: center;
-    text-decoration: underline;
-}
-
-main > article > section > p {
-    background-color: white;
-    text-align: center;
-    border: 1px solid black;
-    padding: 25px;
-}
-
-footer {
-    height: 50px;
+nav {
     width: 100%;
+    height: 12vh;
+    border-bottom: 1px solid black;
     background-color: white;
-    position: absolute;
-    bottom: 0;
-    border-top: 1px solid black;
+    font-size: 1em;
 }
 
-footer > p {
-    text-align: center;
-    color: #ae2573;
+nav > ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr 1fr;
+    grid-template-rows: 6vh;
+    flex-wrap: wrap;
+}
+
+nav > ul > li:nth-of-type(1) {
+    grid-column: 2;
+}
+
+nav > ul > li:nth-of-type(2) {
+    grid-column: 4;
+}
+
+nav > ul > li:nth-of-type(3) {
+    grid-column: 6;
+}
+
+nav > ul > li {
+    margin-top: 2vh;
+    height: 6vh;
+    border-radius: 10px;
+    padding: 1vh;
+}
+
+nav > ul > li:nth-of-type(3) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav > ul > li:nth-of-type(3):hover > ul {
+    display: block;
+}
+
+nav > ul > li:not(:nth-of-type(1)) {
+    background-color: #ae2573;
+    color: white;
     font-weight: bold;
+}
+
+nav li > ul {
+    list-style-type: none;
+    display: none;
+}
+
+nav img {
+    height: 6vh;
+}
+
+nav a, nav a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #b9b9b9
+}
+
+nav > ul > li:hover {
+    transform: scale(1.05);
+    transition-duration: 500ms;
+}
+
+nav > ul > li:not(:hover) {
+    transition-duration: 500ms;
 }

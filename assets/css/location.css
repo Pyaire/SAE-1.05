@@ -8,3 +8,36 @@ html, body {
 *:focus {
     outline: none;
 }
+
+main > article > section {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+main > article > section > h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+main > article > section > p {
+    background-color: white;
+    text-align: center;
+    border: 1px solid black;
+    padding: 25px;
+}
+
+footer {
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid black;
+}
+
+footer > p {
+    text-align: center;
+    color: #ae2573;
+    font-weight: bold;
+}
