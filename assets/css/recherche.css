@@ -1,0 +1,59 @@
+*{ 
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2{
+    font-size: 1.6em;
+}
+
+#carte{
+    margin-top: 3em;
+    width: 50%;
+    height: 50%;
+}
+
+.ping{
+    position: absolute;
+}
+
+.ping2{
+    position: absolute;
+    left: 60%;
+    top: 40%;
+}
+
+.ping img{
+    width: 5%;
+    height: 5%;
+}
+
+.ping .hide{
+    display: none;
+}
+
+.ping:hover .hide{
+    display: block;
+    background-color: white;
+}
+
+.ping2 img{
+    width: 5%;
+    height: 5%;
+}
+
+.ping2 .hide{
+    display: none;
+}
+
+.ping2:hover .hide{
+    display: block;
+    background-color: white;
+}
