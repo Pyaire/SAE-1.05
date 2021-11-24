@@ -3,23 +3,44 @@
     <head>
         <meta charset="UTF-8">
         <title>Ajouter un trajet</title>
+        <link rel="stylesheet" href="assets/css/header.css" />
+        <link rel="stylesheet" href="assets/css/add.css" />
     </head>
     <body>
+
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="assets/images/logo_lille.png" alt="Logo Univ Lille"></a></li>
+                <li><a href="location.html">Location</a></li>
+                <li>
+                    <span>Covoiturage</span>
+                    <ul>
+                        <li><a href="add.html">Ajouter</a></li>
+                        <li><a href="recherche.html">Rechercher</a></li>
+                        <li><a href="historique.html">Historique</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
         <main>
             <section>
                 <h1>Ajouter</h1>
+                <p>Remplissez les champs suivants pour ajouter un trajet.<br />Il pourra être vu par les autres usagers.</p>
+                <hr />
             </section>
             <section>
                 <form action="add.html" method="POST">
-                    <input type="text" placeholder="Nom..." readonly value="CONDUCTEUR" required />
-                    <input type="text" placeholder="Prénom..." readonly value="NUMERO1" required />
-                    <input type="number" placeholder="Âge..." readonly value="19" required />
-                    <input type="text" placeholder="Civilité..." readolny maxlength="3" value="Mr" required />
+                    <input type="text" placeholder="Nom..." disabled value="CONDUCTEUR" required />
+                    <input type="text" placeholder="Prénom..." disabled value="NUMERO1" required />
+                    <input type="number" placeholder="Âge..." disabled value="19" required />
+                    <input type="text" placeholder="Civilité..." disabled maxlength="3" value="Mr" required />
                     <input type="text" placeholder="Adresse de départ..." required />
                     <input type="datetime" placeholder="..h.." required />
                     <input type="text" placeholder="Adresse d'arrivée..." required />
                     <input type="datetime" placeholder="..h.." required />
                     <input type="number" placeholder="Places..." required />
+                    <input type="submit" value="Valider" />
                 </form>
             </section>
         </main>

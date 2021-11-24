@@ -88,3 +88,13 @@ a:hover {
     text-decoration: underline;
     color: #cacaca;
 }
+
+footer {
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+footer > p {
+    grid-column: 2;
+}
