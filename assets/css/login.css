@@ -1,0 +1,67 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Trebuchet MS;
+    background-color: #FFFFFF;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 5vh;
+    text-align: center;
+}
+
+header {
+    margin-top: 5vh;
+}
+
+header > a {
+    width: 10vw;
+}
+
+header > a > img {
+    width: 10vw;
+}
+
+main > h1 {
+    font-weight: normal;
+}
+
+main > article {
+    height: 25vh;
+    min-height: 200px;
+    background-color: #F5F5F5;
+    width: 25vw;
+    margin: 5vh auto 0 auto;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+
+main > article > form {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+main > article > form > input {
+    width: 90%;
+    margin: 3vh 5% 0 5%;
+}
+
+main > article > form > button {
+    width: 90%;
+    margin: 2vh 5% 0 5%;
+    padding: 1vh;
+    background-color: #ae2573;
+    color: white;
+    border: none;   
+    border-radius: 5px;
+}
+
+main > article > form > input {
+    
+}

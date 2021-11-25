@@ -31,8 +31,33 @@ main > header > a > img {
     height: auto;
 }
 
-main > article {
+main > article:nth-of-type(1) {
     grid-row: 2;
+    grid-column: 2;
+    margin-bottom: 5vh;
+}
+
+main > article:nth-of-type(1) a:visited {
+    color: #ae2573;
+}
+
+main > article:nth-of-type(1) a:hover {
+    color: #881556;
+}
+
+main article p {
+    text-align: center;
+}
+
+main article p > a {
+    text-align: center;
+    color: #ae2573;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+main > article:nth-of-type(2) {
+    grid-row: 3;
     grid-column: span 3;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
