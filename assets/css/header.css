@@ -98,3 +98,21 @@ nav > ul > li:hover {
 nav > ul > li:not(:hover) {
     transition-duration: 500ms;
 }
+
+footer {
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > p {
+    text-align: center;
+    color: #ae2573;
+    font-weight: bold;
+}

@@ -114,12 +114,27 @@ a:hover {
     color: #cacaca;
 }
 
-footer {
+body > article {
     margin-top: 10vh;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
 }
 
-footer > p {
+body > article > p {
     grid-column: 2;
+}
+
+footer {
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid black;
+}
+
+footer > p {
+    text-align: center;
+    color: #ae2573;
+    font-weight: bold;
 }

@@ -33,8 +33,8 @@ main > h1 {
 }
 
 main > article {
-    height: 25vh;
-    min-height: 200px;
+    height: fit-content;
+    padding-bottom: 2.5vh;
     background-color: #F5F5F5;
     width: 25vw;
     margin: 5vh auto 0 auto;
@@ -50,6 +50,15 @@ main > article > form {
 main > article > form > input {
     width: 90%;
     margin: 3vh 5% 0 5%;
+    background-color: white;
+    border: 1px solid lightgrey;
+}
+
+main > article > form > select {
+    width: 90%;
+    margin: 3vh 5% 0 5%;
+    background-color: white;
+    border: 1px solid lightgrey;
 }
 
 main > article > form > button {
@@ -60,8 +69,34 @@ main > article > form > button {
     color: white;
     border: none;   
     border-radius: 5px;
+    cursor: pointer;
 }
 
-main > article > form > input {
-    
+footer {
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > p {
+    text-align: center;
+    color: #ae2573;
+    font-weight: bold;
+}
+
+main > a {
+    text-align: center;
+    color: #ae2573;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+main > a:hover {
+    color: #881556;
 }
