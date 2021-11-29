@@ -100,18 +100,19 @@ nav > ul > li:not(:hover) {
 }
 
 footer {
-    height: 5vh;
+    height: 50px;
     width: 100%;
     background-color: white;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     border-top: 1px solid black;
-    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer > p {
     text-align: center;
     color: #ae2573;
     font-weight: bold;
-    font-size: 1.5vh;
 }

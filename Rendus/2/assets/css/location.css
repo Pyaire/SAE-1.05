@@ -25,3 +25,18 @@ main > article > section > p {
     border: 1px solid black;
     padding: 25px;
 }
+
+footer {
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid black;
+}
+
+footer > p {
+    text-align: center;
+    color: #ae2573;
+    font-weight: bold;
+}

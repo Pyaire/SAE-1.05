@@ -1,0 +1,92 @@
+*{ 
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2{
+    font-size: 1.6em;
+}
+
+#carte{
+    margin-top: 3em;
+    width: 50%;
+    height: 50%;
+}
+
+.ping{
+    position: absolute;
+}
+
+.ping2{
+    position: absolute;
+    left: 60%;
+    top: 40%;
+}
+
+.ping img{
+    width: 5%;
+    height: 5%;
+}
+
+.ping .hide{
+    display: none;
+}
+
+.ping:hover .hide{
+    display: block;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+
+.ping:hover .hide input{
+    width: 100%;
+    border: 1px solid lightgrey;
+}
+
+.ping2 img{
+    width: 5%;
+    height: 5%;
+}
+
+.ping2 .hide{
+    display: none;
+}
+
+.ping2:hover .hide{
+    display: block;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+
+.ping2:hover .hide input{
+    width: 100%;
+    border: 1px solid lightgrey;
+}
+
+button {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10px;
+    background-color: #ae2573;
+    color: white;
+    font-weight: bold;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+hr {
+    margin: 5px 0 5px 0;
+}
